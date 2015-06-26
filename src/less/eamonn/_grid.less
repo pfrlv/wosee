@@ -1,0 +1,35 @@
+// @column-width: your column width without units
+// @gap-width: your gap width without units
+@column-width: 55;
+@gap-width: 30;
+
+// DO NOT MODIFY
+// @gap: one gutter for padding and margin
+// @halfgap: half of gutter for padding and margin
+@gap: unit(@gap-width, px);
+@halfgap: unit(@gap-width/2, px);
+
+// Grid for your layout
+// You can add unlimited columns and use them
+@col: unit((1 * (@column-width + @gap-width) - @gap-width), px);
+@2col: unit((2 * (@column-width + @gap-width) - @gap-width), px);
+@3col: unit((3 * (@column-width + @gap-width) - @gap-width), px);
+@4col: unit((4 * (@column-width + @gap-width) - @gap-width), px);
+@5col: unit((5 * (@column-width + @gap-width) - @gap-width), px);
+@6col: unit((6 * (@column-width + @gap-width) - @gap-width), px);
+@7col: unit((7 * (@column-width + @gap-width) - @gap-width), px);
+@8col: unit((8 * (@column-width + @gap-width) - @gap-width), px);
+@9col: unit((9 * (@column-width + @gap-width) - @gap-width), px);
+@10col: unit((10 * (@column-width + @gap-width) - @gap-width), px);
+
+// Grid for .vpwidth() mixin
+@max-col: unit(1 * (@column-width + @gap-width), px);
+@max-2col: unit(2 * (@column-width + @gap-width), px);
+@max-3col: unit(3 * (@column-width + @gap-width), px);
+@max-4col: unit(4 * (@column-width + @gap-width), px);
+@max-5col: unit(5 * (@column-width + @gap-width), px);
+@max-6col: unit(6 * (@column-width + @gap-width), px);
+@max-7col: unit(7 * (@column-width + @gap-width), px);
+@max-8col: unit(8 * (@column-width + @gap-width), px);
+@max-9col: unit(9 * (@column-width + @gap-width), px);
+@max-10col: unit(10 * (@column-width + @gap-width), px);

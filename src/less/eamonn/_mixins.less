@@ -1,0 +1,43 @@
+// Micro clearfix
+// by Nicolas Gallagher
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// 
+// Compatible in Firefox 3.5+, Safari 4+, Chrome, Opera 9+, IE 6+
+.clearfix() {
+  *zoom: 1;
+  margin: auto;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Media queries mixin
+//
+// @cols - columns for breakpoints
+// @rules - your rules fot these breakpoints
+//
+// .vpwidth(@md-8cols, {
+//   float: left;
+//   width: @6cols;
+//   margin: auto @halfgap;
+// });
+.vpwidth( @cols, @rules ) {
+  @media only screen and (max-width: @cols) {
+    @rules();
+  }
+}
+.vpwidth-touch( @cols, @rules ) {
+  @media only screen and (max-device-width: @cols) {
+    @rules();
+  }
+}
+
+
+

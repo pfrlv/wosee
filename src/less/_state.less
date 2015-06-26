@@ -1,0 +1,38 @@
+// Visible only mobile
+.is-mobile-show {
+  display: none;
+  
+  // MEDIA QUERIES //
+  .vpwidth-touch(@max-6col, {
+    display: inline;
+  });
+
+  .vpwidth-touch(@max-5col, {
+    display: inline;
+  });
+}
+
+// Visible only desktop
+.is-desktop-show {
+
+  // MEDIA QUERIES //
+  .vpwidth-touch(@max-6col, {
+    display: none;
+  });
+
+  .vpwidth-touch(@max-5col, {
+    display: none;
+  });
+}
+
+.is-disabled {
+  span {
+    color: #d4d4d3;
+  }
+}
+
+.is-active {
+  span {
+    color: @black;
+  }
+}

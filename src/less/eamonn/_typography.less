@@ -1,0 +1,20 @@
+@font-size: 16;
+@leading: 24;
+
+// DO NOT MODIFY
+@line-height: @leading / @font-size;
+@line: unit(@leading / @font-size, em);
+
+// 1.618 | 1.5 | 1.414 | 1.333 | 1.25 | 1.2 | 1.125 | 1.067
+@ratio: 1.2;
+
+// @base: base font size in em
+// @small, @medium, @large and etc. depend on @ratio
+@base: 1em;
+@small: unit( 1 / @ratio, em );
+@medium: unit( @base * @ratio, em );
+@large: unit( @medium * @ratio, em );
+@xl: unit( @large * @ratio, em );
+@2xl: unit( @xl * @ratio, em );
+@3xl: unit( @2xl * @ratio, em );
+@4xl: unit( @3xl * @ratio, em );

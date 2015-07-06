@@ -66,13 +66,6 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(path.dist.js))
 });
 
-// Copy vendor .js files
-gulp.task('copy:vendor', function() {
-  return gulp.src(path.src.js + 'vendor/*.js')
-    .pipe(gulp.dest(path.dist.js + 'vendor'))
-});
-
-
 // BrowserSync config
 gulp.task('server', function() {
   browsersync({

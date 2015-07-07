@@ -60,7 +60,7 @@ gulp.task('styles', function() {
 
 // Work with .js files
 gulp.task('scripts', function() {
-  return gulp.src([path.src.js + 'classList.js', path.src.js + 'timer.js'])
+  return gulp.src([path.src.js + 'classlist.js', path.src.js + 'timer.js', path.src.js + 'exercise.js'])
     .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(gulp.dest(path.dist.js))

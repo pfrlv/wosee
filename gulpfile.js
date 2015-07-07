@@ -16,7 +16,7 @@ var path = {
   src: {
     js: 'src/js/',
     less: 'src/less/style.less',
-    img: 'src/img/*.*',
+    img: 'src/img/**/*.*',
   },
   dist: {
     js: 'dist/js/',
@@ -26,7 +26,7 @@ var path = {
   watch: {
     html: '**/*.html',
     js: 'src/js/**/*.js',
-    less: 'src/less/*.less',
+    less: 'src/less/**/*.less',
     img: 'src/img/*.*'
   },
   root: __dirname
